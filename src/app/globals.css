@@ -1,15 +1,33 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 
 :root {
+  /* Katapult Brand Colors */
+  --katapult-orange: #FF6B35;
+  --deep-navy: #1B2951;
+  --bright-blue: #4ECDC4;
+  --light-gray: #F8F9FA;
+  --dark-gray: #343A40;
+  --success-green: #28A745;
+  --warning-orange: #FD7E14;
+  
+  /* Base Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #343A40;
 }
 
 @theme inline {
+  --color-primary: var(--katapult-orange);
+  --color-secondary: var(--deep-navy);
+  --color-accent: var(--bright-blue);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-success: var(--success-green);
+  --color-warning: var(--warning-orange);
+  --color-gray-50: var(--light-gray);
+  --color-gray-900: var(--dark-gray);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +40,66 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--katapult-orange);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e55a2b;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional Tailwind utilities */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.bg-gradient-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .mobile-optimized {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .mobile-optimized img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  .mobile-optimized button,
+  .mobile-optimized a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
