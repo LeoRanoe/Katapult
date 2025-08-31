@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, Clock, Users, Target, ArrowRight, Phone, Mail } from 'lucide-react';
+import { CheckCircle, Clock, Users, Target, Phone, Mail } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 
@@ -76,7 +76,7 @@ const benefits = [
 
 const testimonials = [
   {
-    quote: "Katapult delivered exactly what they promised. We hired our VP of Sales in 2 weeks and he's exceeded all expectations.",
+    quote: "Katapult delivered exactly what they promised. We hired our VP of Sales in 2 weeks and he&apos;s exceeded all expectations.",
     author: "Sarah Johnson",
     role: "CEO, TechFlow",
     company: "TechFlow"
@@ -175,7 +175,7 @@ export default function HowWeWorkCompaniesPage() {
               Our 4-Step Process
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From initial consultation to successful hire - here's exactly how we work together.
+              From initial consultation to successful hire - here&apos;s exactly how we work together.
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function HowWeWorkCompaniesPage() {
               What Our Clients Say
             </motion.h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Don't just take our word for it - hear from the companies we've helped grow.
+              Don&apos;t just take our word for it - hear from the companies we&apos;ve helped grow.
             </p>
           </div>
 
@@ -265,7 +265,7 @@ export default function HowWeWorkCompaniesPage() {
                 className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
               >
                 <p className="text-gray-200 mb-6 italic">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div>
                   <p className="text-white font-semibold">
@@ -295,7 +295,7 @@ export default function HowWeWorkCompaniesPage() {
               Ready to Scale Your Sales Team?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let's discuss your hiring needs and show you how we can deliver 
+              Let&apos;s discuss your hiring needs and show you how we can deliver 
               your next sales superstar in just 4 steps.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -49,7 +49,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
   const handleApplicationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Application submitted:', applicationData);
-    alert('Application submitted successfully! We\'ll be in touch soon.');
+    alert('Application submitted successfully! We&apos;ll be in touch soon.');
     setIsApplying(false);
   };
 
@@ -179,7 +179,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 {/* Requirements */}
                 <div>
                   <h2 className="font-display font-bold text-2xl text-secondary mb-4">
-                    What We're Looking For
+                    What We&apos;re Looking For
                   </h2>
                   <ul className="space-y-3">
                     {job.requirements.map((requirement, index) => (

@@ -78,12 +78,12 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="font-display font-bold text-4xl lg:text-6xl mb-6">
-                Let's Talk
-              </h1>
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                Ready to katapult your growth? Whether you're hiring sales talent or 
-                looking for your next opportunity, we're here to help.
-              </p>
+              Let&apos;s Talk
+            </h1>
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
+              Ready to katapult your growth? Whether you&apos;re hiring sales talent or
+              looking for your next opportunity, we&apos;re here to help.
+            </p>
             </motion.div>
           </div>
         </Container>
@@ -337,9 +337,9 @@ export default function ContactPage() {
                           placeholder={
                             activeForm === 'client' 
                               ? 'Tell us about the role you need to fill, ideal candidate profile, and any specific requirements...'
-                              : activeForm === 'candidate'
-                              ? 'Tell us about your career goals, experience, and what type of role you\'re looking for...'
-                              : 'How can we help you?'
+              : activeForm === 'candidate'
+              ? 'Tell us about your career goals, experience, and what type of role you&apos;re looking for...'
+              : 'How can we help you?'
                           }
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                         />
@@ -375,8 +375,8 @@ export default function ContactPage() {
                       Message Sent!
                     </h3>
                     <p className="text-gray-600 mb-6">
-                      Thank you for reaching out. We'll get back to you within 24 hours.
-                    </p>
+              Thank you for reaching out. We&apos;ll get back to you within 24 hours.
+            </p>
                     <div className="w-8 h-1 bg-primary rounded-full mx-auto animate-pulse" />
                   </div>
                 )}
@@ -399,8 +399,8 @@ export default function ContactPage() {
               Visit Our Office
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Located in the heart of Amsterdam, we're always happy to meet in person.
-            </p>
+            Located in the heart of Amsterdam, we&apos;re always happy to meet in person.
+          </p>
           </div>
           
           {/* Placeholder for Google Maps */}

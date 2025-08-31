@@ -25,7 +25,7 @@ const values = [
   {
     icon: Globe,
     title: 'Think Global',
-    description: 'We\'re building the future of European SaaS recruitment with a global mindset and local expertise.'
+    description: 'We&apos;re building the future of European SaaS recruitment with a global mindset and local expertise.'
   }
 ];
 
@@ -159,7 +159,7 @@ export default function CareersPage() {
               Our Values
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              These aren't just words on a wall - they guide every decision we make and every hire we bring on board.
+              These aren&apos;t just words on a wall - they guide every decision we make and every hire we bring on board.
             </p>
           </div>
 
@@ -198,10 +198,10 @@ export default function CareersPage() {
               viewport={{ once: true }}
               className="font-display font-bold text-3xl lg:text-4xl text-secondary mb-6"
             >
-              Why You'll Love It Here
+              Why You&apos;ll Love It Here
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We've designed our benefits package based on what we'd want as employees ourselves.
+              We&apos;ve designed our benefits package based on what we&apos;d want as employees ourselves.
             </p>
           </div>
 
@@ -273,7 +273,7 @@ export default function CareersPage() {
               Open Positions
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're growing fast and looking for exceptional people to join our mission.
+              We&apos;re growing fast and looking for exceptional people to join our mission.
             </p>
           </div>
 
@@ -352,11 +352,11 @@ export default function CareersPage() {
           >
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="font-display font-bold text-xl text-secondary mb-4">
-                Don't See the Perfect Role?
+                Don&apos;t See the Perfect Role?
               </h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                We're always interested in hearing from exceptional people. Send us your CV and 
-                tell us what you're passionate about.
+                We&apos;re always interested in hearing from exceptional people. Send us your CV and 
+                tell us what you&apos;re passionate about.
               </p>
               <a
                 href="mailto:careers@katapult.nl"
@@ -383,7 +383,7 @@ export default function CareersPage() {
               Meet the Leadership Team
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experienced leaders who've built and scaled SaaS companies themselves.
+              Experienced leaders who&apos;ve built and scaled SaaS companies themselves.
             </p>
           </div>
 
@@ -406,7 +406,7 @@ export default function CareersPage() {
                 <p className="text-accent font-medium mb-2">{member.role}</p>
                 <p className="text-gray-600 text-sm mb-4">{member.background}</p>
                 <blockquote className="text-gray-700 italic">
-                  "{member.quote}"
+                  &ldquo;{member.quote}&rdquo;
                 </blockquote>
               </motion.div>
             ))}

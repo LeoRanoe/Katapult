@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Users, Clock, Star, ArrowRight, Building, User } from 'lucide-react';
+import { TrendingUp, Users, Clock, Star } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 import AnimatedText from '@/components/animations/AnimatedText';
@@ -9,9 +9,9 @@ import FunnelOption from '@/components/sections/FunnelOption';
 import GlowingButton from '@/components/animations/GlowingButton';
 import FloatingCard from '@/components/animations/FloatingCard';
 import CountUpAnimation from '@/components/animations/CountUpAnimation';
-import ParallaxSection from '@/components/animations/ParallaxSection';
+
 import GradientBlur from '@/components/animations/GradientBlur';
-import { mockJobs } from '@/data/mockJobs';
+
 
 const heroPhases = [
   "Your next sales hire in 4 interviews",
@@ -81,7 +81,7 @@ export default function Home() {
                 <AnimatedText phrases={heroPhases} />
               </h1>
               <p className="text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-                We're not just recruiters; we're ex-SaaS-sellers who understand your world. 
+                We&apos;re not just recruiters; we&apos;re ex-SaaS-sellers who understand your world. 
                 Partner with us to build championship sales teams that drive real growth.
               </p>
             </motion.div>
@@ -103,7 +103,7 @@ export default function Home() {
                 Choose Your Path
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Whether you're scaling your sales team or advancing your career, we have the expertise to guide you.
+                Whether you&apos;re scaling your sales team or advancing your career, we have the expertise to guide you.
               </p>
             </motion.div>
 

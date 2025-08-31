@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, Clock, Star, Shield, ArrowRight, Phone, Mail, User } from 'lucide-react';
+import { CheckCircle, Star, Shield, Phone, Mail, User } from 'lucide-react';
+import Link from 'next/link';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 
@@ -10,7 +11,7 @@ const candidateProcess = [
     step: 1,
     title: 'Initial Conversation',
     duration: '20 minutes',
-    description: 'We get to know you, your career goals, and what you\'re looking for in your next role.',
+    description: 'We get to know you, your career goals, and what you&apos;re looking for in your next role.',
     details: [
       'Understand your career aspirations and motivations',
       'Review your experience and achievements',
@@ -60,12 +61,12 @@ const benefits = [
   {
     icon: Shield,
     title: 'Confidential Process',
-    description: 'Your job search remains completely confidential until you\'re ready to move forward.'
+    description: 'Your job search remains completely confidential until you&apos;re ready to move forward.'
   },
   {
     icon: Star,
     title: 'Exclusive Opportunities',
-    description: 'Access to roles that aren\'t advertised publicly, often with better compensation.'
+    description: 'Access to roles that aren&apos;t advertised publicly, often with better compensation.'
   },
   {
     icon: User,
@@ -76,7 +77,7 @@ const benefits = [
 
 const candidateTestimonials = [
   {
-    quote: "Katapult didn't just find me a job - they found me a career. The role was perfect and the salary exceeded my expectations.",
+    quote: "Katapult didn&apos;t just find me a job - they found me a career. The role was perfect and the salary exceeded my expectations.",
     author: "Michael Zhang",
     role: "Senior Account Executive",
     company: "CloudVenture"
@@ -98,7 +99,7 @@ const candidateTestimonials = [
 const tips = [
   {
     title: 'Perfect Your Sales Story',
-    description: 'Prepare specific examples of how you\'ve driven revenue, exceeded quotas, and solved customer problems.',
+    description: 'Prepare specific examples of how you&apos;ve driven revenue, exceeded quotas, and solved customer problems.',
     icon: '📈'
   },
   {
@@ -113,7 +114,7 @@ const tips = [
   },
   {
     title: 'Ask Smart Questions',
-    description: 'Inquire about sales methodology, team structure, and growth opportunities. Show you\'re thinking strategically.',
+    description: 'Inquire about sales methodology, team structure, and growth opportunities. Show you&apos;re thinking strategically.',
     icon: '❓'
   }
 ];
@@ -135,7 +136,7 @@ export default function HowWeWorkCandidatesPage() {
                 Your Career, Katapulted
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-                We don't just find you a job - we find you the perfect next step in your 
+                We don&apos;t just find you a job - we find you the perfect next step in your 
                 SaaS sales career. Personalized, confidential, and results-driven.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -145,12 +146,12 @@ export default function HowWeWorkCandidatesPage() {
                 >
                   Start Your Journey
                 </a>
-                <a
+                <Link
                   href="/jobs"
                   className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
                   Browse Opportunities
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -198,7 +199,7 @@ export default function HowWeWorkCandidatesPage() {
               How We Work Together
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From first conversation to career success - here's how we'll partner to find your perfect role.
+              From first conversation to career success - here&apos;s how we&apos;ll partner to find your perfect role.
             </p>
           </div>
 
@@ -319,7 +320,7 @@ export default function HowWeWorkCandidatesPage() {
               Success Stories
             </motion.h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Hear from professionals who've katapulted their careers with our help.
+              Hear from professionals who&apos;ve katapulted their careers with our help.
             </p>
           </div>
 
@@ -334,7 +335,7 @@ export default function HowWeWorkCandidatesPage() {
                 className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
               >
                 <p className="text-gray-200 mb-6 italic">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div>
                   <p className="text-white font-semibold">
@@ -364,7 +365,7 @@ export default function HowWeWorkCandidatesPage() {
               Ready to Katapult Your Career?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let's have a confidential conversation about your career goals and 
+              Let&apos;s have a confidential conversation about your career goals and 
               how we can help you achieve them.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

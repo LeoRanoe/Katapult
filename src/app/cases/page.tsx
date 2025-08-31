@@ -89,8 +89,8 @@ export default function CaseStudiesPage() {
                 </h1>
               </PaintBrushEffect>
               <p className="text-xl lg:text-2xl text-gray-200 mb-12 leading-relaxed">
-                Real results from real companies. See how we've helped SaaS businesses scale their sales teams and drive growth.
-              </p>
+              Real results from real companies. See how we&apos;ve helped SaaS businesses scale their sales teams and drive growth.
+            </p>
               
               {/* Metrics */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -207,8 +207,8 @@ export default function CaseStudiesPage() {
                   {/* Testimonial */}
                   <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-lg mt-8">
                     <blockquote className="text-gray-700 italic text-lg leading-relaxed mb-4">
-                      "{study.testimonial}"
-                    </blockquote>
+              &ldquo;{study.testimonial}&rdquo;
+            </blockquote>
                     <cite className="font-semibold text-secondary">
                       {study.author}
                     </cite>
@@ -250,7 +250,7 @@ export default function CaseStudiesPage() {
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
               Join the companies that have transformed their sales teams with Katapult. 
-              Let's discuss how we can drive your growth.
+              Let&apos;s discuss how we can drive your growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

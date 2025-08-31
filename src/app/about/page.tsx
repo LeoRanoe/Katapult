@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Target, Users, Zap, Heart, Award, TrendingUp } from 'lucide-react';
+import { Target, Zap, Heart, Award } from 'lucide-react';
+import Link from 'next/link';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 
@@ -9,7 +10,7 @@ const values = [
   {
     icon: Target,
     title: 'Results-Driven',
-    description: 'We don\'t just make promises - we deliver. Our "Score in Four" methodology ensures tangible outcomes for every client.',
+    description: 'We don&apos;t just make promises - we deliver. Our &quot;Score in Four&quot; methodology ensures tangible outcomes for every client.',
   },
   {
     icon: Zap,
@@ -44,7 +45,7 @@ const timeline = [
   {
     year: '2020',
     title: 'First 100 Placements',
-    description: 'Achieved our first major milestone while refining our unique "Score in Four" methodology.',
+    description: 'Achieved our first major milestone while refining our unique &quot;Score in Four&quot; methodology.',
   },
   {
     year: '2022',
@@ -76,10 +77,10 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="font-display font-bold text-4xl lg:text-6xl mb-6">
-                We're Not Just Recruiters
+                We&apos;re Not Just Recruiters
               </h1>
               <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                We're <span className="text-primary font-semibold">ex-SaaS-sellers</span> who understand 
+                We&apos;re <span className="text-primary font-semibold">ex-SaaS-sellers</span> who understand 
                 what it takes to succeed in sales. We score in four to katapult your growth.
               </p>
             </motion.div>
@@ -132,7 +133,7 @@ export default function AboutPage() {
               </p>
               <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-lg">
                 <p className="text-lg font-medium text-primary italic">
-                  "We don't just fill positions - we build sales teams that drive exponential growth."
+                  &quot;We don&apos;t just fill positions - we build sales teams that drive exponential growth.&quot;
                 </p>
               </div>
             </motion.div>
@@ -195,7 +196,7 @@ export default function AboutPage() {
               Our Journey
             </motion.h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              From startup to market leader - here's how we've grown alongside the Dutch SaaS ecosystem.
+              From startup to market leader - here&apos;s how we&apos;ve grown alongside the Dutch SaaS ecosystem.
             </p>
           </div>
 
@@ -261,22 +262,22 @@ export default function AboutPage() {
               Ready to Katapult Your Growth?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Whether you're looking to hire top sales talent or find your next career opportunity, 
-              we're here to make it happen.
+              Whether you&apos;re looking to hire top sales talent or find your next career opportunity, 
+              we&apos;re here to make it happen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
               >
                 Start Hiring
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/jobs"
                 className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
               >
                 Find Jobs
-              </a>
+              </Link>
             </div>
           </motion.div>
         </Container>

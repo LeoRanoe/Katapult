@@ -166,7 +166,7 @@ export default function JobsPage() {
               </h2>
               {searchTerm && (
                 <p className="text-gray-600 mt-1">
-                  Showing results for "{searchTerm}"
+                  Showing results for &quot;{searchTerm}&quot;
                 </p>
               )}
             </div>

@@ -24,8 +24,8 @@ export default function PaintBrushEffect({
       pathLength: 1,
       opacity: 1,
       transition: {
-        pathLength: { duration: 1.2, ease: "easeInOut", delay },
-        opacity: { duration: 0.3, delay }
+        duration: 1.2,
+        delay
       }
     }
   };
@@ -43,8 +43,7 @@ export default function PaintBrushEffect({
       clipPath: 'inset(0 0 0 0)',
       transition: {
         duration: 0.8,
-        delay: delay + 0.6,
-        ease: "easeOut"
+        delay: delay + 0.6
       }
     }
   };

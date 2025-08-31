@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Filter, X, ChevronDown } from 'lucide-react';
+import { Filter, ChevronDown } from 'lucide-react';
 import { JobFilters as JobFiltersType } from '@/types';
 import { jobLocations, jobTypes, seniorityLevels, jobTags } from '@/data/mockJobs';
 
@@ -21,7 +21,7 @@ export default function JobFilters({
 }: JobFiltersProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const updateFilter = (key: keyof JobFiltersType, value: any) => {
+  const updateFilter = (key: keyof JobFiltersType, value: JobFiltersType[keyof JobFiltersType]) => {
     onFiltersChange({ ...filters, [key]: value });
   };
 

@@ -22,7 +22,7 @@ export default function TeamPage() {
                 Meet the Team
               </h1>
               <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                We're not just recruiters - we're <span className="text-primary font-semibold">former sales professionals</span> who 
+                We&apos;re not just recruiters - we&apos;re <span className="text-primary font-semibold">former sales professionals</span> who 
                 understand what it takes to succeed in SaaS sales.
               </p>
             </motion.div>
@@ -220,7 +220,7 @@ export default function TeamPage() {
               Join Our Team
             </motion.h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Ready to help shape the future of SaaS recruitment? We're always looking for talented people to join our mission.
+              Ready to help shape the future of SaaS recruitment? We&apos;re always looking for talented people to join our mission.
             </p>
           </div>
 
@@ -261,7 +261,7 @@ export default function TeamPage() {
             className="text-center"
           >
             <p className="text-gray-300 mb-6">
-              Don't see the right role? We're always interested in hearing from exceptional people.
+              Don&apos;t see the right role? We&apos;re always interested in hearing from exceptional people.
             </p>
             <a
               href="mailto:careers@katapult.nl"

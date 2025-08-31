@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Search, TrendingUp, Users, Award, CheckCircle, ArrowRight, Star, Briefcase, MapPin } from 'lucide-react';
+import Link from 'next/link';
+import { Search, TrendingUp, Users, Award, CheckCircle, ArrowRight, Star, Briefcase } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 import PaintBrushEffect from '@/components/animations/PaintBrushEffect';
@@ -43,7 +44,7 @@ const testimonials = [
     increase: "45% salary increase"
   },
   {
-    quote: "I went from SDR to AE in 8 months with Katapult's support. They truly understand career progression in SaaS.",
+    quote: "I went from SDR to AE in 8 months with Katapult\'s support. They truly understand career progression in SaaS.",
     author: "Lisa Chen",
     role: "Account Executive",
     company: "CloudSync",
@@ -137,22 +138,22 @@ export default function CandidatesPage() {
               </PaintBrushEffect>
               <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
                 Join the fastest-growing companies in Europe. Get exclusive access to SaaS sales roles 
-                that aren't advertised anywhere else.
+                that aren&apos;t advertised anywhere else.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
+                <Link
                   href="/jobs"
                   className="bg-white text-accent px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center justify-center space-x-2"
                 >
                   <span>Browse Opportunities</span>
                   <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/contact"
                   className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
                   Get Career Advice
-                </a>
+                </Link>
               </div>
             </motion.div>
             
@@ -201,7 +202,7 @@ export default function CandidatesPage() {
               Why Work With Us
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're not just recruiters - we're career partners who understand the SaaS sales landscape 
+              We&apos;re not just recruiters - we&apos;re career partners who understand the SaaS sales landscape 
               and know how to accelerate your growth.
             </p>
           </div>
@@ -292,13 +293,13 @@ export default function CandidatesPage() {
                   </div>
                 </div>
                 
-                <a
+                <Link
                   href="/jobs"
                   className="w-full bg-accent/10 text-accent py-3 rounded-lg font-semibold transition-colors hover:bg-accent hover:text-white flex items-center justify-center space-x-2 group-hover:bg-accent group-hover:text-white"
                 >
                   <span>View Roles</span>
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -363,7 +364,7 @@ export default function CandidatesPage() {
               Success Stories
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See how we've helped sales professionals advance their careers in SaaS.
+              See how we&apos;ve helped sales professionals advance their careers in SaaS.
             </p>
           </div>
 
@@ -378,7 +379,7 @@ export default function CandidatesPage() {
                 className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow"
               >
                 <blockquote className="text-gray-700 italic mb-6 leading-relaxed">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </blockquote>
                 
                 <div className="border-t pt-6">
@@ -426,23 +427,23 @@ export default function CandidatesPage() {
               Ready to Accelerate Your Career?
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Join thousands of sales professionals who've advanced their careers with Katapult. 
+              Join thousands of sales professionals who&apos;ve advanced their careers with Katapult.
               Your next opportunity is waiting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/jobs"
                 className="bg-white text-accent px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <span>Browse Jobs</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
               >
                 Get Career Consultation
-              </a>
+              </Link>
             </div>
           </motion.div>
         </Container>

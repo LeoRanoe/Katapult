@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Users, TrendingUp, Clock, Shield, CheckCircle, ArrowRight, Target, Award, Zap } from 'lucide-react';
+import Link from 'next/link';
+import { Users, Clock, Shield, CheckCircle, ArrowRight, Target, Award, Zap } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 import PaintBrushEffect from '@/components/animations/PaintBrushEffect';
@@ -107,22 +108,22 @@ export default function CompaniesPage() {
               </PaintBrushEffect>
               <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
                 Partner with ex-SaaS sales leaders who understand your challenges. 
-                We don't just fill roles - we build championship teams.
+                We don&apos;t just fill roles - we build championship teams.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
+                <Link
                   href="/contact"
                   className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center justify-center space-x-2"
                 >
                   <span>Start Hiring</span>
                   <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/how-we-work/companies"
                   className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
                   See How It Works
-                </a>
+                </Link>
               </div>
             </motion.div>
             
@@ -171,8 +172,8 @@ export default function CompaniesPage() {
               The Katapult Advantage
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're not just recruiters - we're former SaaS sales leaders who've walked in your shoes. 
-              Here's what makes us different.
+              We&apos;re not just recruiters - we&apos;re former SaaS sales leaders who&apos;ve walked in your shoes. 
+              Here&apos;s what makes us different.
             </p>
           </div>
 
@@ -293,7 +294,7 @@ export default function CompaniesPage() {
               Success Stories
             </motion.h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See how we've helped SaaS companies scale their sales teams and drive growth.
+              See how we&apos;ve helped SaaS companies scale their sales teams and drive growth.
             </p>
           </div>
 
@@ -308,8 +309,8 @@ export default function CompaniesPage() {
                 className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-shadow"
               >
                 <blockquote className="text-gray-700 italic mb-6 leading-relaxed">
-                  "{testimonial.quote}"
-                </blockquote>
+              &ldquo;{testimonial.quote}&rdquo;
+            </blockquote>
                 
                 <div className="border-t pt-6">
                   <div className="flex items-center space-x-3 mb-3">
@@ -346,22 +347,22 @@ export default function CompaniesPage() {
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
               Join 500+ companies that have successfully scaled their sales teams with Katapult. 
-              Let's discuss your hiring needs.
+              Let&apos;s discuss your hiring needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <span>Schedule a Call</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cases"
                 className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
               >
                 View Case Studies
-              </a>
+              </Link>
             </div>
           </motion.div>
         </Container>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Users, Target, TrendingUp, Shield, Clock, Award, CheckCircle, ArrowRight } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
@@ -178,7 +179,7 @@ export default function ServicesPage() {
                 
                 <div className="border-t pt-6">
                   <p className="font-bold text-lg text-secondary mb-4">{service.price}</p>
-                  <a
+                  <Link
                     href="/contact"
                     className={`w-full py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2 ${
                       service.popular
@@ -188,7 +189,7 @@ export default function ServicesPage() {
                   >
                     <span>Get Started</span>
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -263,18 +264,18 @@ export default function ServicesPage() {
                 ))}
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <Link
                   href="/contact"
                   className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                 >
                   Start Your Search
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/how-we-work/companies"
                   className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
