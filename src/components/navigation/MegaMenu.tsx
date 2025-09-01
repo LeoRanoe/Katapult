@@ -38,7 +38,7 @@ export default function MegaMenu({ items, className = '' }: MegaMenuProps) {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleMouseEnter = (title: string, event: React.MouseEvent) => {
+  const handleMouseEnter = (title: string) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setActiveMenu(title);
   };

@@ -68,7 +68,7 @@ export default function DramaticText({
         {words.map((word, index) => (
           <motion.span
             key={index}
-            className="inline-block mr-4 font-display"
+            className="inline-block mr-4 font-display text-primary"
             style={{
               ...getVariantStyles(),
               background: 'linear-gradient(135deg, #00FFA3 0%, #00CC82 50%, #009966 100%)',

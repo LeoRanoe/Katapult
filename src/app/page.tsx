@@ -21,6 +21,7 @@ import { OverlappingText } from '@/components/typography/DramaticText';
 import PaintBrushTransition from '@/components/effects/PaintBrushTransition';
 import CustomCursor from '@/components/effects/CustomCursor';
 import AnimatedChart, { AnimatedCounter } from '@/components/animations/AnimatedChart';
+import StyleTest from '@/components/test/StyleTest';
 
 
 const heroPhases = [
@@ -596,6 +597,9 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+      
+      {/* Temporary Style Test */}
+      <StyleTest />
     </>
   );
 }
