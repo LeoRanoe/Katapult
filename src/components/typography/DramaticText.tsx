@@ -68,11 +68,10 @@ export default function DramaticText({
         {words.map((word, index) => (
           <motion.span
             key={index}
-            className="inline-block mr-4 font-display"
+            className="inline-block mr-4 font-display text-primary"
             style={{
               ...getVariantStyles()
             }}
-            className="text-primary"
             initial={{ opacity: 0, y: 100, rotateX: -90 }}
             whileInView={{ 
               opacity: 1, 
