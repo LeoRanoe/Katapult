@@ -78,7 +78,7 @@ export default function Home() {
     <>
       <CustomCursor />
       {/* Hero Section */}
-      <Section className="bg-brand-background text-brand-text overflow-hidden relative min-h-screen">
+      <Section className="bg-secondary text-white overflow-hidden relative min-h-screen">
         <PaintBrushTransition 
           direction="diagonal"
           color="#BFFF00"
@@ -90,8 +90,8 @@ export default function Home() {
           <InteractiveParticles />
         </div>
         {/* Gradient Blur Effects - Positioned to avoid text overlap */}
-        <GradientBlur className="top-32 left-10" variant="primary" size="lg" opacity={0.15} />
-        <GradientBlur className="bottom-32 right-10" variant="accent" size="md" opacity={0.2} />
+        <GradientBlur className="top-32 left-10" variant="primary" size="lg" opacity={0.1} />
+        <GradientBlur className="bottom-32 right-10" variant="primary" size="md" opacity={0.15} />
         
         <Container>
           <div className="py-24 lg:py-40 text-center relative z-20">
@@ -103,30 +103,30 @@ export default function Home() {
               <div className="mb-8">
                 <DramaticText 
                   variant="hero"
-                  className="font-display font-bold text-4xl lg:text-7xl mb-4 drop-shadow-lg"
+                  className="font-display font-bold text-4xl lg:text-7xl mb-4 drop-shadow-lg text-primary"
                 >
                   We Score in Four
                 </DramaticText>
                 <div className="mb-4">
                   <OverlappingText 
-                    frontText="KATAPULT" 
+                    frontText="katapult" 
                     backText="GROWTH"
                     className="text-2xl lg:text-4xl"
                   />
                 </div>
-                <h2 className="font-display font-semibold text-xl lg:text-3xl mb-8 leading-tight text-gray-200 drop-shadow-md">
+                <h2 className="font-display font-semibold text-xl lg:text-3xl mb-8 leading-tight text-white/90 drop-shadow-md">
                   <TypewriterText phrases={heroPhases} />
                 </h2>
                 <ScrollParallax speed={0.3} direction="up">
                   <GlassmorphismCard className="inline-block">
-                    <div className="text-brand-accent px-6 py-2 text-lg font-semibold">
+                    <div className="text-primary px-6 py-2 text-lg font-semibold">
                       Maximum 4 candidates per role - Quality over quantity
                     </div>
                   </GlassmorphismCard>
                 </ScrollParallax>
               </div>
-              <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 mb-12 max-w-4xl mx-auto">
-                <p className="text-xl lg:text-2xl text-brand-text/90 leading-relaxed drop-shadow-sm">
+              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 mb-12 max-w-4xl mx-auto border border-primary/20">
+                <p className="text-xl lg:text-2xl text-white/95 leading-relaxed drop-shadow-sm">
                   We&apos;re ex-SaaS-sellers who understand your world. Our &ldquo;Score in Four&rdquo; methodology delivers 
                   the right hire in 4 interviews or less - no cure, no pay guarantee.
                 </p>
@@ -153,7 +153,7 @@ export default function Home() {
       </Section>
 
       {/* Dual Funnel Section */}
-      <Section className="bg-brand-background text-brand-text">
+      <Section className="bg-secondary text-white">
         <Container>
           <div className="py-16 lg:py-24">
             <motion.div
@@ -164,11 +164,11 @@ export default function Home() {
             >
               <DramaticText 
                 variant="section"
-                className="font-display font-bold text-3xl lg:text-5xl text-brand-accent mb-6"
+                className="font-display font-bold text-3xl lg:text-5xl text-primary mb-6"
               >
                 Choose Your Path
               </DramaticText>
-              <p className="text-xl text-brand-text/80 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
                 Whether you&apos;re scaling your sales team or advancing your career, we have the expertise to guide you.
               </p>
             </motion.div>
@@ -206,17 +206,17 @@ export default function Home() {
       </Section>
 
       {/* Score in Four Methodology Section */}
-      <Section className="bg-brand-background/95 text-brand-text">
+      <Section className="bg-secondary/95 text-white">
         <Container>
           <div className="py-16 lg:py-24">
             <div className="text-center mb-16">
               <DramaticText 
                 variant="section"
-                className="font-display font-bold text-3xl lg:text-5xl text-brand-accent mb-6"
+                className="font-display font-bold text-3xl lg:text-5xl text-primary mb-6"
               >
                 Score in Four Methodology
               </DramaticText>
-              <p className="text-xl text-brand-text/80 max-w-3xl mx-auto mb-12">
+              <p className="text-xl text-white/80 max-w-3xl mx-auto mb-12">
                 Why waste time with 20+ candidates when the right hire is in the first 4? 
                 As ex-SaaS sellers, we know exactly what works.
               </p>
@@ -235,15 +235,15 @@ export default function Home() {
                       ✗
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-400">Others:</span> Send 20+ CVs hoping something sticks
+                      <span className="font-semibold text-white/60">Others:</span> Send 20+ CVs hoping something sticks
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-brand-accent/20 text-brand-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/20 text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       ✓
                     </div>
                     <div>
-                      <span className="font-semibold text-brand-accent">Katapult:</span> Maximum 4 hand-picked candidates who fit
+                      <span className="font-semibold text-primary">katapult:</span> Maximum 4 hand-picked candidates who fit
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -251,38 +251,38 @@ export default function Home() {
                       ✗
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-400">Others:</span> Generic recruitment approach
+                      <span className="font-semibold text-white/60">Others:</span> Generic recruitment approach
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-brand-accent/20 text-brand-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/20 text-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       ✓
                     </div>
                     <div>
-                      <span className="font-semibold text-brand-accent">Katapult:</span> Ex-SaaS sellers who speak your language
+                      <span className="font-semibold text-primary">katapult:</span> Ex-SaaS sellers who speak your language
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-brand-accent/10 rounded-2xl p-8">
-                <h4 className="font-display font-bold text-xl text-brand-accent mb-4">
+              <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20">
+                <h4 className="font-display font-bold text-xl text-primary mb-4">
                   Our Guarantee
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span>No cure, no pay contract</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span>Maximum 4 candidates per role</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span>24-hour response guarantee</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span>Exclusive talent pool access</span>
                   </div>
                 </div>
@@ -293,16 +293,16 @@ export default function Home() {
       </Section>
 
       {/* Metrics Section - "We Score in Four" */}
-      <Section className="bg-brand-background text-brand-text">
+      <Section className="bg-secondary text-white">
         <Container>
           <div className="text-center mb-16 relative z-10">
             <DramaticText 
               variant="section"
-              className="font-display font-bold text-3xl lg:text-4xl mb-6 text-enhanced-visibility"
+              className="font-display font-bold text-3xl lg:text-4xl mb-6 text-enhanced-visibility text-primary"
             >
               Proven Results
             </DramaticText>
-            <p className="text-xl text-brand-text/80 max-w-2xl mx-auto text-enhanced-visibility">
+            <p className="text-xl text-white/80 max-w-2xl mx-auto text-enhanced-visibility">
               Our &ldquo;Score in Four&rdquo; methodology delivers results that matter - every single time.
             </p>
           </div>
@@ -318,34 +318,34 @@ export default function Home() {
                 className="text-center relative"
               >
                 <motion.div 
-                  className="w-16 h-16 bg-brand-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4 relative overflow-hidden"
+                  className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4 relative overflow-hidden"
                   whileHover={{ scale: 1.1, rotateY: 10 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <metric.icon className="w-8 h-8 text-brand-accent relative z-10" />
+                  <metric.icon className="w-8 h-8 text-primary relative z-10" />
                   <motion.div
-                    className="absolute inset-0 bg-brand-accent/10"
+                    className="absolute inset-0 bg-primary/10"
                     initial={{ scale: 0, opacity: 0 }}
                     whileHover={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
                   />
                 </motion.div>
-                <div className="font-display font-bold text-3xl lg:text-4xl text-brand-text mb-2 text-enhanced-visibility">
+                <div className="font-display font-bold text-3xl lg:text-4xl text-white mb-2 text-enhanced-visibility">
                   <AnimatedCounter 
                     value={parseInt(metric.value.replace(/\D/g, '') || '0')} 
                     suffix={metric.value.replace(/\d/g, '')} 
                     className="text-3xl lg:text-4xl"
                   />
                 </div>
-                <div className="text-brand-text/70 font-medium text-enhanced-visibility">
+                <div className="text-white/70 font-medium text-enhanced-visibility">
                   {metric.label}
                 </div>
                 {/* Floating particles around metrics */}
                 <motion.div
-                  className="absolute -top-2 -right-2 w-2 h-2 bg-brand-accent rounded-full"
+                  className="absolute -top-2 -right-2 w-2 h-2 bg-primary rounded-full"
                   animate={{
                     y: [-10, 10, -10],
-                    opacity: [0.3, 1, 0.3]
+                    opacity: [0.3, 0.8, 0.3]
                   }}
                   transition={{
                     duration: 2 + index * 0.5,
@@ -363,9 +363,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-brand-text/10 backdrop-blur-sm rounded-3xl p-8 border border-brand-accent/20"
+              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-primary/20"
             >
-              <h3 className="font-display font-bold text-xl text-brand-text mb-6 text-center">
+              <h3 className="font-display font-bold text-xl text-white mb-6 text-center">
                 Success Rate Breakdown
               </h3>
               <AnimatedChart
@@ -384,16 +384,16 @@ export default function Home() {
       </Section>
 
       {/* Featured Jobs */}
-      <Section className="bg-brand-background/90 text-brand-text">
+      <Section className="bg-secondary/90 text-white">
         <Container>
           <div className="text-center mb-16">
             <DramaticText 
               variant="section"
-              className="font-display font-bold text-3xl lg:text-4xl text-brand-accent mb-6"
+              className="font-display font-bold text-3xl lg:text-4xl text-primary mb-6"
             >
               Featured Opportunities
             </DramaticText>
-            <p className="text-xl text-brand-text/80 max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Discover your next career move with these handpicked SaaS sales positions.
             </p>
           </div>
@@ -406,19 +406,19 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-brand-text/10 backdrop-blur-sm rounded-2xl border border-brand-accent/20 p-6 hover:shadow-lg transition-shadow group cursor-pointer"
+                  className="bg-white/10 backdrop-blur-sm rounded-2xl border border-primary/20 p-6 hover:shadow-lg transition-shadow group cursor-pointer"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <div className="bg-brand-accent/20 text-brand-accent px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium">
                       {job.type}
                     </div>
                     <Star className="w-5 h-5 text-gray-400 group-hover:text-yellow-400 transition-colors" />
                   </div>
-                  <h3 className="font-display font-bold text-xl text-brand-text mb-2">
+                  <h3 className="font-display font-bold text-xl text-white mb-2">
                     {job.title}
                   </h3>
-                  <p className="text-brand-text/70 mb-4">{job.company} • {job.location}</p>
-                  <div className="font-semibold text-brand-accent text-lg">
+                  <p className="text-white/70 mb-4">{job.company} • {job.location}</p>
+                  <div className="font-semibold text-primary text-lg">
                     {job.salary}
                   </div>
                 </motion.div>
@@ -435,12 +435,12 @@ export default function Home() {
       </Section>
 
       {/* Real Client Success Stories */}
-      <Section className="bg-brand-background text-brand-text">
+      <Section className="bg-secondary text-white">
         <Container>
           <div className="text-center mb-16">
             <DramaticText 
               variant="section"
-              className="font-display font-bold text-3xl lg:text-4xl text-brand-accent mb-6"
+              className="font-display font-bold text-3xl lg:text-4xl text-primary mb-6"
             >
               Real Results from Real SaaS Companies
             </DramaticText>
@@ -451,7 +451,7 @@ export default function Home() {
                 className="text-lg lg:text-xl opacity-60"
               />
             </div>
-            <p className="text-xl text-brand-text/80 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Don&apos;t just take our word for it. Here&apos;s how our &ldquo;Score in Four&rdquo; methodology has delivered 
               exceptional results for leading SaaS companies.
             </p>
@@ -489,26 +489,26 @@ export default function Home() {
                 glowEffect={true}
                 intensity={1.2}
                 backContent={
-                  <div className="p-8 h-full flex flex-col items-center justify-center bg-gradient-to-br from-brand-accent/10 to-brand-accent/5">
+                  <div className="p-8 h-full flex flex-col items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-brand-accent mb-4">
+                      <div className="text-4xl font-bold text-primary mb-4">
                         {testimonial.result}
                       </div>
                       <div className="space-y-3">
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
                           <span className="text-sm">Time to hire: {testimonial.result}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
                           <span className="text-sm">Quality candidates: 4 max</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
                           <span className="text-sm">Success rate: 95%+</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-brand-accent rounded-full"></div>
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
                           <span className="text-sm">Client satisfaction: 100%</span>
                         </div>
                       </div>
@@ -519,22 +519,22 @@ export default function Home() {
                 <div className="p-8 h-full flex flex-col">
                   <div className="mb-6 flex-1">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="bg-brand-accent/20 text-brand-accent px-3 py-1 rounded-full text-sm font-bold">
+                      <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-bold">
                         {testimonial.result}
                       </div>
-                      <div className="text-xs text-gray-500">
+                      <div className="text-xs text-white/50">
                         {testimonial.background}
                       </div>
                     </div>
-                    <blockquote className="text-brand-text/90 text-lg leading-relaxed italic">
+                    <blockquote className="text-white/90 text-lg leading-relaxed italic">
                       &ldquo;{testimonial.quote}&rdquo;
                     </blockquote>
                   </div>
                   <div className="border-t pt-4">
-                    <div className="font-semibold text-brand-accent">{testimonial.role}</div>
-                    <div className="text-brand-text/70">{testimonial.company}</div>
+                    <div className="font-semibold text-primary">{testimonial.role}</div>
+                    <div className="text-white/70">{testimonial.company}</div>
                   </div>
-                  <div className="text-center mt-4 text-sm text-brand-text/50">
+                  <div className="text-center mt-4 text-sm text-white/50">
                     Hover to see impact metrics →
                   </div>
                 </div>
@@ -547,12 +547,12 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-brand-accent/10 rounded-2xl p-8 max-w-3xl mx-auto"
+              className="bg-primary/10 rounded-2xl p-8 max-w-3xl mx-auto border border-primary/20"
             >
-              <h3 className="font-display font-bold text-2xl text-brand-accent mb-4">
+              <h3 className="font-display font-bold text-2xl text-primary mb-4">
                 Ready to Experience the &ldquo;Score in Four&rdquo; Difference?
               </h3>
-              <p className="text-brand-text/80 mb-6 text-lg">
+              <p className="text-white/80 mb-6 text-lg">
                 Join the SaaS companies who&apos;ve discovered that quality beats quantity. 
                 Get your next sales hire in 4 interviews or less - guaranteed.
               </p>
@@ -561,12 +561,12 @@ export default function Home() {
                   Book Your Free Consultation
                 </GlowingButton>
                 <motion.a
-                  href="https://wa.me/31612345678?text=Hi%20Katapult%2C%20I%27d%20like%20to%20learn%20about%20your%20Score%20in%20Four%20methodology"
+                  href="https://wa.me/31612345678?text=Hi%20katapult%2C%20I%27d%20like%20to%20learn%20about%20your%20Score%20in%20Four%20methodology"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white font-semibold rounded-2xl hover:bg-green-700 transition-colors"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.448"/>
@@ -574,7 +574,7 @@ export default function Home() {
                   Quick WhatsApp Chat
                 </motion.a>
               </div>
-              <p className="text-sm text-brand-text/60 mt-4">
+              <p className="text-sm text-white/60 mt-4">
                 ✓ 24-hour response guarantee ✓ No cure, no pay ✓ Maximum 4 candidates per role
               </p>
             </motion.div>
@@ -588,7 +588,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="font-display font-bold text-xl lg:text-2xl text-brand-text/50 hover:text-brand-accent transition-colors"
+                className="font-display font-bold text-xl lg:text-2xl text-white/50 hover:text-primary transition-colors"
               >
                 {logo}
               </motion.div>

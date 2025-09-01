@@ -68,12 +68,10 @@ export default function Header() {
             href="/" 
             className="flex items-center space-x-3 group"
           >
-            <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-brand-background font-display font-bold text-xl">K</span>
+            <div className="flex items-center space-x-1 group-hover:scale-105 transition-transform">
+              <span className="text-brand-accent font-display font-bold text-3xl">⚡</span>
+              <span className="text-brand-accent font-display font-bold text-2xl lowercase">katapult</span>
             </div>
-            <span className="font-display font-bold text-2xl text-brand-text">
-              Katapult
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
