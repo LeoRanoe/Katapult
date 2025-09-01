@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap');
+=======
+>>>>>>> parent of 0bda15c (refactor(styles): reorder imports in globals.css for better readability)
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 
 :root {
   /* Katapult Brand Colors - Authentic Brand Palette */
