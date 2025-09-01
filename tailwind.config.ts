@@ -26,7 +26,7 @@ const config: Config = {
           900: '#1F3300',
         },
         secondary: {
-          DEFAULT: '#1B4332', // Dark green background from brand theme
+          DEFAULT: '#2D4A3A', // Dark green background matching reference image
           light: '#2D5A47',
           dark: '#0F2A1F',
           50: '#F0F5F2',
@@ -34,21 +34,21 @@ const config: Config = {
           200: '#B3CCBB',
           300: '#8CB399',
           400: '#669977',
-          500: '#1B4332', // Main brand background color
+          500: '#2D4A3A', // Main brand background color
           600: '#40916C',
           700: '#2D5A47',
-          800: '#1B4332',
+          800: '#2D4A3A',
           900: '#0F2A1F',
         },
         // Brand-specific colors for consistency
         brand: {
-          background: '#1B4332', // Main dark green background
+          background: '#2D4A3A', // Main dark green background matching reference
           accent: '#BFFF00', // Yellow/lime accent
           text: '#FFFFFF', // White text on dark background
           'text-muted': '#A3A3A3', // Muted text
         },
         accent: {
-          DEFAULT: '#52B788',
+          DEFAULT: '#BFFF00',
           light: '#74C69D',
           dark: '#40916C',
         },

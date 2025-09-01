@@ -70,12 +70,7 @@ export default function DramaticText({
             key={index}
             className="inline-block mr-4 font-display text-primary"
             style={{
-              ...getVariantStyles(),
-              background: 'linear-gradient(135deg, #00FFA3 0%, #00CC82 50%, #009966 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 4px 8px rgba(0, 255, 163, 0.3))',
+              ...getVariantStyles()
             }}
             initial={{ opacity: 0, y: 100, rotateX: -90 }}
             whileInView={{ 
@@ -100,11 +95,7 @@ export default function DramaticText({
             {/* Text shadow/outline effect */}
             <span
               className="absolute inset-0 -z-10"
-              style={{
-                ...getVariantStyles(),
-                color: 'rgba(0, 255, 163, 0.1)',
-                transform: 'translate(2px, 2px)',
-              }}
+              style={{ ...getVariantStyles(), color: 'rgba(191, 255, 0, 0.1)', transform: 'translate(2px, 2px)' }}
             >
               {word}
             </span>
@@ -165,16 +156,16 @@ export function OverlappingText({
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <DramaticText variant="overlay" animate={false}>
+        <div className="text-primary/10 font-display font-bold text-6xl lg:text-8xl">
           {backText}
-        </DramaticText>
+        </div>
       </motion.div>
       
       {/* Foreground text */}
       <div className="relative z-10">
-        <DramaticText variant="hero">
+        <div className="text-primary font-display font-bold text-4xl lg:text-6xl">
           {frontText}
-        </DramaticText>
+        </div>
       </div>
     </div>
   );

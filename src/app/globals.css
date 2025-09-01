@@ -8,10 +8,10 @@
   --katapult-green: #BFFF00;
   --katapult-green-light: #D4FF33;
   --katapult-green-dark: #9AE600;
-  --katapult-dark-green: #1B4332;
+  --katapult-dark-green: #2D4A3A;
   --katapult-dark-green-light: #2D5A47;
   --katapult-dark-green-dark: #0F2A1F;
-  --katapult-accent: #52B788;
+  --katapult-accent: #BFFF00;
   --katapult-accent-light: #74C69D;
   --katapult-accent-dark: #40916C;
   
@@ -35,7 +35,7 @@
   --info-blue: #3B82F6;
   
   /* Base Colors */
-  --background: #1B4332;
+  --background: #2D4A3A;
   --foreground: #ffffff;
   --border-light: var(--gray-200);
   --border-medium: var(--gray-300);

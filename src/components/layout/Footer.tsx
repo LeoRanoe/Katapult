@@ -38,12 +38,10 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <Link href="/" className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center">
-                  <span className="text-brand-background font-display font-bold text-xl">K</span>
+                <div className="flex items-center space-x-1">
+                  <span className="text-brand-accent font-display font-bold text-2xl">⚡</span>
+                  <span className="text-brand-accent font-display font-bold text-xl lowercase">katapult</span>
                 </div>
-                <span className="font-display font-bold text-2xl">
-                  Katapult
-                </span>
               </Link>
               <p className="text-brand-text/80 mb-6 max-w-md">
                 We&apos;re not just recruiters; we&apos;re ex-SaaS-sellers. 
