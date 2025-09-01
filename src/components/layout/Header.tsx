@@ -57,21 +57,21 @@ export default function Header() {
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm'
-          : 'bg-white'
+          ? 'bg-brand-background/98 backdrop-blur-md shadow-lg border-b border-brand-accent/20'
+          : 'bg-brand-background/95 backdrop-blur-sm border-b border-brand-accent/10 shadow-sm'
       )}
     >
       <Container>
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link 
             href="/" 
             className="flex items-center space-x-3 group"
           >
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-white font-display font-bold text-xl">K</span>
+            <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+              <span className="text-brand-background font-display font-bold text-xl">K</span>
             </div>
-            <span className="font-display font-bold text-2xl text-secondary">
+            <span className="font-display font-bold text-2xl text-brand-text">
               Katapult
             </span>
           </Link>
@@ -87,7 +87,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors font-medium"
+                  className="flex items-center space-x-1 text-brand-text hover:text-brand-accent transition-colors font-medium"
                 >
                   <span>{item.name}</span>
                   {item.dropdown && (
@@ -97,12 +97,12 @@ export default function Header() {
 
                 {/* Dropdown */}
                 {item.dropdown && activeDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-gray-100 py-2">
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-brand-background/98 backdrop-blur-md shadow-xl rounded-lg border border-brand-accent/20 py-2 z-40">
                     {item.dropdown.map((dropdownItem) => (
                       <Link
                         key={dropdownItem.name}
                         href={dropdownItem.href}
-                        className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
+                        className="block px-4 py-3 text-brand-text hover:text-brand-accent hover:bg-brand-accent/10 transition-colors"
                       >
                         {dropdownItem.name}
                       </Link>
@@ -117,7 +117,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <Link
               href="/contact"
-              className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+              className="bg-brand-accent text-brand-background px-6 py-3 rounded-lg font-semibold hover:bg-brand-accent/90 transition-colors"
             >
               Get Started
             </Link>
@@ -126,7 +126,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-brand-text hover:text-brand-accent transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -134,13 +134,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
+          <div className="lg:hidden border-t border-brand-accent/20 py-4">
             <div className="space-y-4">
               {navigation.map((item) => (
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+                    className="block text-brand-text hover:text-brand-accent transition-colors font-medium py-2"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
@@ -151,7 +151,7 @@ export default function Header() {
                         <Link
                           key={dropdownItem.name}
                           href={dropdownItem.href}
-                          className="block text-gray-600 hover:text-primary transition-colors py-1"
+                          className="block text-brand-text/80 hover:text-brand-accent transition-colors py-1"
                           onClick={() => setIsOpen(false)}
                         >
                           {dropdownItem.name}
@@ -163,7 +163,7 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="block bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center mt-4"
+                className="block bg-brand-accent text-brand-background px-6 py-3 rounded-lg font-semibold text-center mt-4"
                 onClick={() => setIsOpen(false)}
               >
                 Get Started

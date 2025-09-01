@@ -87,9 +87,9 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 text-white">
+      <Section className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 text-white relative overflow-hidden">
         <Container>
-          <div className="py-16 lg:py-24">
+          <div className="py-20 lg:py-28 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -97,11 +97,11 @@ export default function BlogPage() {
               className="text-center max-w-4xl mx-auto"
             >
               <PaintBrushEffect direction="top" delay={0.5}>
-                <h1 className="font-display font-bold text-4xl lg:text-6xl mb-6">
+                <h1 className="font-display font-bold text-4xl lg:text-6xl xl:text-7xl mb-8 tracking-tight">
                   Insights & Trends
                 </h1>
               </PaintBrushEffect>
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-200 mb-12 leading-relaxed">
                 Expert insights on SaaS sales recruitment, market trends, and team building strategies from our experienced consultants.
               </p>
               <div className="flex items-center justify-center space-x-8 text-sm text-gray-300">
@@ -121,6 +121,10 @@ export default function BlogPage() {
             </motion.div>
           </div>
         </Container>
+        
+        {/* Background decoration */}
+        <div className="absolute top-12 left-12 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-12 right-12 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
       </Section>
 
       {/* Featured Posts */}

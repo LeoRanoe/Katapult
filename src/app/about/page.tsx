@@ -68,24 +68,28 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-gradient-to-br from-secondary to-secondary/90 text-white">
+      <Section className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 text-white relative overflow-hidden">
         <Container>
-          <div className="text-center py-16 lg:py-24">
+          <div className="text-center py-20 lg:py-28 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-display font-bold text-4xl lg:text-6xl mb-6">
+              <h1 className="font-display font-bold text-4xl lg:text-6xl xl:text-7xl mb-8 tracking-tight">
                 We&apos;re Not Just Recruiters
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                We&apos;re <span className="text-primary font-semibold">ex-SaaS-sellers</span> who understand 
+              <p className="text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+                We&apos;re <span className="text-accent font-semibold">ex-SaaS-sellers</span> who understand 
                 what it takes to succeed in sales. We score in four to katapult your growth.
               </p>
             </motion.div>
           </div>
         </Container>
+        
+        {/* Background decoration */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
       </Section>
 
       {/* Stats Section */}

@@ -7,8 +7,8 @@ import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 import JobCard from '@/components/jobs/JobCard';
 import JobFilters from '@/components/jobs/JobFilters';
-import { mockJobs } from '@/data/mockJobs';
-import { JobFilters as JobFiltersType } from '@/types';
+import { jobs as mockJobs } from '@/data/mockJobs';
+import { JobFilters as JobFiltersType, Job } from '@/types';
 
 export default function JobsPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,7 +22,7 @@ export default function JobsPage() {
   });
 
   const filteredJobs = useMemo(() => {
-    return mockJobs.filter(job => {
+    return mockJobs.filter((job: Job) => {
       // Search term filter
       if (searchTerm && !job.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
           !job.company.toLowerCase().includes(searchTerm.toLowerCase()) &&
@@ -76,18 +76,18 @@ export default function JobsPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-gradient-to-br from-secondary to-secondary/90 text-white">
+      <Section className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 text-white relative overflow-hidden">
         <Container>
-          <div className="text-center py-12 lg:py-16">
+          <div className="text-center py-20 lg:py-28 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-display font-bold text-4xl lg:text-5xl mb-6">
+              <h1 className="font-display font-bold text-4xl lg:text-6xl xl:text-7xl mb-8 tracking-tight">
                 Your Next SaaS Sales Role Awaits
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
                 Discover handpicked opportunities from the fastest-growing SaaS companies in the Netherlands
               </p>
             </motion.div>
@@ -112,6 +112,10 @@ export default function JobsPage() {
             </motion.div>
           </div>
         </Container>
+        
+        {/* Background decoration */}
+        <div className="absolute top-16 left-16 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-16 right-16 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
       </Section>
 
       {/* Jobs Section */}
@@ -181,7 +185,7 @@ export default function JobsPage() {
           {/* Jobs Grid */}
           {filteredJobs.length > 0 ? (
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredJobs.map((job, index) => (
+              {filteredJobs.map((job: Job, index: number) => (
                 <JobCard key={job.id} job={job} index={index} />
               ))}
             </div>

@@ -69,24 +69,28 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-gradient-to-br from-secondary to-secondary/90 text-white">
+      <Section className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 text-white relative overflow-hidden">
         <Container>
-          <div className="text-center py-16 lg:py-24">
+          <div className="text-center py-20 lg:py-28 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-display font-bold text-4xl lg:text-6xl mb-6">
-              Let&apos;s Talk
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Ready to katapult your growth? Whether you&apos;re hiring sales talent or
-              looking for your next opportunity, we&apos;re here to help.
-            </p>
+              <h1 className="font-display font-bold text-4xl lg:text-6xl xl:text-7xl mb-8 tracking-tight">
+                Let&apos;s Talk
+              </h1>
+              <p className="text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+                Ready to katapult your growth? Whether you&apos;re hiring sales talent or
+                looking for your next opportunity, we&apos;re here to help.
+              </p>
             </motion.div>
           </div>
         </Container>
+        
+        {/* Background decoration */}
+        <div className="absolute top-10 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
       </Section>
 
       <Section>

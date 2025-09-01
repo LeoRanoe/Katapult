@@ -7,7 +7,7 @@ import { MapPin, Clock, Users, DollarSign, ArrowLeft, Send, Star } from 'lucide-
 import Container from '@/components/layout/Container';
 import Section from '@/components/layout/Section';
 import JobCard from '@/components/jobs/JobCard';
-import { mockJobs } from '@/data/mockJobs';
+import { jobs } from '@/data/mockJobs';
 import Link from 'next/link';
 
 interface JobDetailPageProps {
@@ -27,13 +27,13 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
     experience: '',
   });
 
-  const job = mockJobs.find(j => j.id === params.id);
+  const job = jobs.find(j => j.id === params.id);
   
   if (!job) {
     notFound();
   }
 
-  const relatedJobs = mockJobs
+  const relatedJobs = jobs
     .filter(j => j.id !== job.id && (
       j.company === job.company || 
       j.seniority === job.seniority ||

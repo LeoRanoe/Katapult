@@ -1,81 +1,102 @@
 import { Job } from '@/types';
 
-export const mockJobs: Job[] = [
+export const jobs: Job[] = [
   {
     id: '1',
-    title: 'Senior Sales Manager',
-    company: 'TechFlow',
+    title: 'Enterprise Sales Manager - DACH Region',
+    company: 'Leading HR Tech SaaS',
     location: 'Amsterdam',
-    salary: { min: 80000, max: 120000, currency: 'EUR' },
+    salary: { min: 85000, max: 120000, currency: 'EUR' },
     type: 'full-time',
     seniority: 'senior',
-    description: 'Lead a high-performing sales team in our Amsterdam office. Drive revenue growth through strategic account management and team leadership.',
+    description: 'Join a fast-growing HR technology platform serving 1M+ users globally. Lead enterprise sales expansion into German-speaking markets. This role offers the opportunity to build and scale the DACH sales strategy from the ground up while working with cutting-edge HR automation technology.',
     requirements: [
-      '5+ years of SaaS sales experience',
-      'Proven track record of team management',
-      'Experience with enterprise accounts',
-      'Fluent in Dutch and English'
+      'Native German speaker with business-level English',
+      '5+ years enterprise B2B SaaS sales experience (€100k+ deals)',
+      'Proven track record selling to DACH market enterprises',
+      'Experience with complex sales cycles (6-18 months)',
+      'Understanding of German business culture and procurement processes',
+      'Experience with GDPR compliance in sales processes',
+      'Track record of exceeding quota by 20%+ consistently'
     ],
     benefits: [
-      'Competitive salary + commission',
-      'Equity package',
-      '25 vacation days',
-      'Learning & development budget'
+      'Base salary €85k-120k + OTE €150k-180k',
+      'Equity package 0.15%-0.25%',
+      'German health insurance contribution',
+      '30 vacation days + German holidays',
+      'Hybrid work (Amsterdam office 2 days/week)',
+      'Professional development budget €5k/year',
+      '€1,500 home office setup allowance',
+      'Annual company retreat + quarterly team events'
     ],
-    remote: false,
-    createdAt: '2025-01-15',
+    remote: true,
+    createdAt: '2024-12-01',
     featured: true,
     tags: ['SaaS', 'Enterprise', 'Management', 'Amsterdam']
   },
   {
     id: '2',
-    title: 'Business Development Representative',
-    company: 'SaaS Dynamics',
-    location: 'Remote',
-    salary: { min: 45000, max: 65000, currency: 'EUR' },
+    title: 'Senior Account Executive - Enterprise SaaS',
+    company: 'Fast-Growing Fintech',
+    location: 'Amsterdam/Remote',
+    salary: { min: 75000, max: 100000, currency: 'EUR' },
     type: 'full-time',
-    seniority: 'junior',
-    description: 'Join our fast-growing BDR team and help qualify leads for our enterprise sales team. Perfect for someone starting their SaaS sales career.',
+    seniority: 'senior',
+    description: 'Drive enterprise growth for innovative payment solutions serving 500+ European banks. Own full sales cycle from lead to close for deals €250k-€2M+. Work with C-level executives at tier-1 financial institutions across Europe.',
     requirements: [
-      '1-2 years of sales experience',
-      'Strong communication skills',
-      'Hunter mentality',
-      'Experience with CRM tools'
+      '4+ years enterprise B2B SaaS sales experience',
+      'Proven track record with €500k+ annual quota achievement',
+      'Experience selling to financial services/fintech sector',
+      'Understanding of European banking regulations',
+      'Fluent Dutch and English (German a plus)',
+      'Experience with Salesforce, Outreach, and modern sales stack',
+      'Consultative selling approach for complex technical solutions'
     ],
     benefits: [
-      'Remote-first culture',
-      'Career progression path',
-      'Monthly team events',
-      'Health insurance'
+      'Base €75k-100k + OTE €140k-180k (top performers €200k+)',
+      'Equity 0.10%-0.20% with high growth potential',
+      'Comprehensive benefits including pension',
+      '28 vacation days + flexible time off',
+      'Choice of Amsterdam office or fully remote',
+      '€3k annual learning & development budget',
+      'Latest MacBook Pro + €1k home office budget',
+      'Quarterly team events and annual company offsite'
     ],
     remote: true,
-    createdAt: '2025-01-10',
+    createdAt: '2024-11-28',
     featured: true,
     tags: ['Remote', 'Entry-level', 'BDR', 'SaaS']
   },
   {
     id: '3',
-    title: 'VP of Sales',
-    company: 'CloudVenture',
+    title: 'Head of Sales - AI Data Platform',
+    company: 'Series B Data Platform',
     location: 'Amsterdam',
-    salary: { min: 150000, max: 200000, currency: 'EUR' },
+    salary: { min: 130000, max: 180000, currency: 'EUR' },
     type: 'full-time',
     seniority: 'director',
-    description: 'Scale our sales organization from €5M to €50M ARR. Build and lead a world-class sales team in the European market.',
+    description: 'Build and lead the entire sales organization for a cutting-edge AI-powered analytics platform. Scale from current €5M to €25M ARR over 24 months. Work directly with the founding team to establish sales processes, hire A-players, and drive enterprise adoption across Europe.',
     requirements: [
-      '10+ years of SaaS sales leadership',
-      'Experience scaling from startup to scale-up',
-      'Proven track record with enterprise deals',
-      'Experience building sales processes'
+      '7+ years sales leadership experience in B2B SaaS',
+      'Proven track record scaling revenue 3-5x at high-growth startups',
+      'Experience selling complex technical solutions to C-level executives',
+      'Background in data/analytics/AI preferred',
+      'Experience with Fortune 500 enterprise sales',
+      'Team building experience (hired and developed 10+ sales reps)',
+      'Fluent English, Dutch preferred for local market expansion'
     ],
     benefits: [
-      'Significant equity package',
-      'C-level compensation',
-      'Relocation assistance',
-      'Executive coaching'
+      'Base €130k-180k + equity package 0.25%-1.00%',
+      'Significant upside with fast-growing Series B company',
+      'Comprehensive benefits + pension matching',
+      '30 vacation days + unlimited sick leave',
+      'Hybrid work model (3 days Amsterdam office)',
+      '€10k annual professional development budget',
+      'Executive coaching and leadership development',
+      'Company equity program with high growth potential'
     ],
     remote: false,
-    createdAt: '2025-01-12',
+    createdAt: '2024-11-30',
     featured: true,
     tags: ['Leadership', 'Scale-up', 'C-level', 'Amsterdam']
   },

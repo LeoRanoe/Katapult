@@ -24,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased bg-brand-background text-brand-text">
         <Header />
-        <main className="pt-16 lg:pt-20">
+        <main className="pt-24 lg:pt-28 relative">
           {children}
         </main>
         <Footer />

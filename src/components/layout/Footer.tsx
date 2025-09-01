@@ -30,7 +30,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white">
+    <footer className="bg-brand-background text-brand-text">
       <Container>
         <div className="py-16 lg:py-20">
           {/* Main Footer Content */}
@@ -38,30 +38,30 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <Link href="/" className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-display font-bold text-xl">K</span>
+                <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center">
+                  <span className="text-brand-background font-display font-bold text-xl">K</span>
                 </div>
                 <span className="font-display font-bold text-2xl">
                   Katapult
                 </span>
               </Link>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-brand-text/80 mb-6 max-w-md">
                 We&apos;re not just recruiters; we&apos;re ex-SaaS-sellers. 
                 We score in four to katapult your growth.
               </p>
               
               {/* Contact Info */}
               <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <Mail className="w-5 h-5 text-primary" />
+                <div className="flex items-center space-x-3 text-brand-text/80">
+                  <Mail className="w-5 h-5 text-brand-accent" />
                   <span>hello@katapult.nl</span>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <Phone className="w-5 h-5 text-primary" />
+                <div className="flex items-center space-x-3 text-brand-text/80">
+                  <Phone className="w-5 h-5 text-brand-accent" />
                   <span>+31 (0)20 123 4567</span>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <div className="flex items-center space-x-3 text-brand-text/80">
+                  <MapPin className="w-5 h-5 text-brand-accent" />
                   <span>Amsterdam, Netherlands</span>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-brand-text/80 hover:text-brand-text transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-brand-text/80 hover:text-brand-text transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-gray-300 hover:text-white transition-colors"
+                      className="text-brand-text/80 hover:text-brand-text transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -118,21 +118,21 @@ export default function Footer() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="bg-secondary/50 rounded-2xl p-8 mb-12">
+          <div className="bg-brand-text/10 rounded-2xl p-8 mb-12">
             <div className="max-w-md">
               <h3 className="font-display font-bold text-xl mb-2">
                 Stay Updated
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-brand-text/80 mb-6">
                 Get the latest SaaS jobs and industry insights delivered to your inbox.
               </p>
               <div className="flex">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-l-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="flex-1 px-4 py-3 rounded-l-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent"
                 />
-                <button className="bg-primary hover:bg-primary/90 px-6 py-3 rounded-r-lg font-semibold transition-colors">
+                <button className="bg-brand-accent hover:bg-brand-accent/90 px-6 py-3 rounded-r-lg font-semibold text-brand-background transition-colors">
                   Subscribe
                 </button>
               </div>
@@ -140,8 +140,8 @@ export default function Footer() {
           </div>
 
           {/* Bottom Footer */}
-          <div className="border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+          <div className="border-t border-brand-accent/30 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-brand-text/60 text-sm">
               © 2025 Katapult. All rights reserved.
             </p>
             
@@ -151,7 +151,7 @@ export default function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-brand-text/60 hover:text-brand-text transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
